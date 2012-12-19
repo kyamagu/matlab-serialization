@@ -1,5 +1,5 @@
 function bytes = serialize(obj)
-%SERIALIZE serialize a matlab object into a byte sequence
+%SERIALIZE Serialize a matlab object into a byte sequence
 %
 %    bytes = serialize(obj)
 %

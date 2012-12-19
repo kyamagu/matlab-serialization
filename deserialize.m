@@ -1,5 +1,5 @@
 function obj = deserialize(bytes)
-%DESERIALIZE decode a matlab object from a byte sequence
+%DESERIALIZE Decode a matlab object from a byte sequence
 %
 %    obj = deserialize(bytes)
 %

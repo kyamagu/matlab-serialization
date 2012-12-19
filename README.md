@@ -1,7 +1,7 @@
-Matlab serializer
-=================
+Matlab serialization
+====================
 
-Matlab object serialization library using undocumented mex functions
+Matlab object serialization functions built with undocumented mex functions
 `mxSerialize` and `mxDeserialize`. These functions are unsupported and
 Mathworks may change at any time without notice.
 
