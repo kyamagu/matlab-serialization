@@ -2,8 +2,9 @@ Matlab serialization
 ====================
 
 Matlab object serialization functions built with undocumented mex functions
-`mxSerialize` and `mxDeserialize`. These functions are unsupported and
-Mathworks may change at any time without notice.
+`mxSerialize` and `mxDeserialize`. The function can convert any ordinary matlab
+variable into uint8 array. These functions are unsupported and may change at
+any time without notice in the future Matlab release.
 
 Compile
 -------
