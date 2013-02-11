@@ -1,9 +1,8 @@
 function obj = deserialize(bytes)
-%DESERIALIZE Decode a matlab object from a byte sequence
+%DESERIALIZE Decode a matlab object from a byte sequence.
 %
 %    obj = deserialize(bytes)
 %
-% DESERIALIZE decodes matlab object from a byte sequence. The function depends
-% on hidden mex API and may change in the future without notification.
+% DESERIALIZE decodes matlab object from a byte sequence created by SERIALIZE.
 %
 % See also serialize

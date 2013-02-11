@@ -6,8 +6,8 @@ Matlab object serialization functions built with undocumented mex functions
 variable into uint8 array. These functions are unsupported and may change at
 any time without notice in the future Matlab release.
 
-Compile
--------
+Build
+-----
 
 Use the supplied `Makefile` in unix environment, with MATLAB installation path.
 
