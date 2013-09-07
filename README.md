@@ -21,7 +21,7 @@ Alternatively, just call `mex` in the matlab shell.
 Usage
 -----
 
-Use `serlialize` to encode arbitrary matlab variable. The function returns
+Use `serialize` to encode arbitrary matlab variable. The function returns
 encoded variable as a `uint8` array.
 
     >> x = randn(1,4)
