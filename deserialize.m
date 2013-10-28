@@ -6,3 +6,6 @@ function obj = deserialize(bytes)
 % DESERIALIZE decodes matlab object from a byte sequence created by SERIALIZE.
 %
 % See also serialize
+    loadlibmx();
+    obj = calllib('libmx', 'mxDeserialize', bytes, numel(bytes));
+end
