@@ -3,8 +3,6 @@ function loadlibmx()
     if ~libisloaded('libmx')
         header_file = fullfile(fileparts(mfilename('fullpath')), 'serialize.h');
         [notfound, warnings] = loadlibrary('libmx', header_file);
-        if ~isempty(notfound)
-            error(warnings);
-        end
+        assert(isempty(notfound), warnings);
     end
 end
