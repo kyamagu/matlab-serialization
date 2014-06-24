@@ -6,6 +6,8 @@ Matlab object serialization functions built with undocumented mex functions
 variable into a uint8 array. These functions are unsupported and may change at
 any time without notice in the future Matlab release.
 
+As of Matlab R2014a, these hidden functions no longer exist.
+
 The implementation is built upon the `loadlibrary` and `calllib` in Matlab.
 This package also contains an example of MEX versions in the `mex` directory.
 
