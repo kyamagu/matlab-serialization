@@ -4,17 +4,25 @@ Matlab serialization
 Matlab object serialization functions built with undocumented mex functions
 `mxSerialize` and `mxDeserialize`. The function can convert any ordinary matlab
 variable into a uint8 array. These functions are unsupported and may change at
-any time without notice in the future Matlab release.
+any time without notice in the future Matlab release. As of Matlab R2014a,
+there was a big change in these hidden APIs, and this package supports only
+`C++` MEX interface.
 
-As of Matlab R2014a, these hidden functions no longer exist.
+Build
+-----
 
-The implementation is built upon the `loadlibrary` and `calllib` in Matlab.
-This package also contains an example of MEX versions in the `mex` directory.
+Use MEX command in Matlab.
+
+    >> cd /path/to/matlab-serialization
+    >> mex serialize.cc
+    >> mex deserialize.cc
+
+Alternatively, use the attached Makefile in UNIX.
 
 Usage
 -----
 
-Add path to the `matlab-serialization` before use.
+Add path to the `matlab-serialization` and compile before use.
 
     >> addpath('/path/to/matlab-serialization');
 
@@ -42,16 +50,6 @@ Use `deserialize` to retrieve the encoded variable.
     z =
 
         0.7147   -0.2050   -0.1241    1.4897
-
-MEX examples
-------------
-
-You may build a MEX version of `serialize` and `deserialize` in the `mex/`
-directory.
-
-    >> cd mex/
-    >> mex serialize.c
-    >> mex deserialize.c
 
 License
 -------

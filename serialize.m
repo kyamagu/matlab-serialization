@@ -7,6 +7,3 @@ function bytes = serialize(obj)
 % The result is given in a uint8 array.
 %
 % See also deserialize
-    loadlibmx();
-    bytes = calllib('libmx', 'mxSerialize', obj);
-end

@@ -1,8 +1,6 @@
 /* Serialize mxArray into byte stream using hidden mex API
  */
-#include "mex.h"
-
-EXTERN_C mxArray* mxSerialize(const mxArray* arr);
+#include "serialize.h"
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]) {
     if (nrhs != 1)
