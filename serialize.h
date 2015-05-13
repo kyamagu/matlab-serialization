@@ -7,7 +7,9 @@
  * so we use the new MATRIX_DLL_EXPORT_SYM as an ugly hack instead
  */
 #if defined(__cplusplus) && defined(MATRIX_DLL_EXPORT_SYM)
-  #define EXTERN_C extern
+  #ifndef EXTERN_C
+    #define EXTERN_C extern
+  #endif /* EXTERN_C */
   namespace matrix{
     namespace detail{
       namespace noninlined{
